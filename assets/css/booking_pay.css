@@ -1,0 +1,140 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Container for the booking form */
+.booking-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.booking-title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.booking-description {
+    font-size: 14px;
+    color: #777;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form styling */
+form {
+    width: 100%;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-size: 14px;
+    color: #555;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    background-color: #f9f9f9;
+    color: #333;
+    box-sizing: border-box;
+    transition: border 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #23a6d5;
+    outline: none;
+}
+
+/* Submit button */
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    background-color: #23a6d5;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #1e8cbf;
+}
+
+.submit-btn:active {
+    background-color: #1979a3;
+}
+
+/* Stripe card element styling */
+#card-element {
+    margin-top: 20px;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Error messages */
+#error-message {
+    color: red;
+    margin-top: 10px;
+    text-align: center;
+}
+
+/* Responsive design for mobile */
+@media (max-width: 768px) {
+    .booking-container {
+        padding: 15px;
+        margin: 20px auto;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 14px;
+    }
+
+    .submit-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+}

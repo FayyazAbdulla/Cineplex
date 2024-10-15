@@ -1,0 +1,709 @@
+/* Dark Mode Styles */
+.dark-mode {
+  background-color: #121212;
+  color: hsl(0, 0%, 100%);
+}
+
+.dark-mode header {
+  background-color: #1e1e1e;
+}
+
+.dark-mode .hero {
+  background-color: #007acc;
+}
+
+.dark-mode .hero-button {
+  background-color: #ee7752;
+}
+
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+  font-family: "Arial", sans-serif; /* Readable font */
+  line-height: 1.6; /* Line spacing for better readability */
+  background-color: #1d1d1d; /* Dark background for theater vibe */
+  color: #ffffff; /* Light text color for contrast */
+}
+
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+.header {
+    background-color: #111;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: #e50914;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e50914;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #e50914;
+}
+
+/* Responsive nav toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-list.active {
+    display: block;
+}
+
+/* Welcome message styling */
+.welcome-message {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+}
+
+/* Logout icon */
+.logout-icon {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+    color: #e50914;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .welcome-message {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
+
+
+
+
+/* Main Content Styles */
+.main-content {
+  padding: 2rem; /* Padding for the main content */
+}
+
+/* Hero Section Styles */
+.hero {
+  background-image: url("http://localhost:8080/CinePlex/assets/images/main_banner1.jpg"); /* Replace with an actual background image URL */
+  background-size: cover;
+  background-position: center;
+  height: 80vh; /* Adjust height as necessary */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Bring content above any pseudo-elements */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("path/to/your/background-image.jpg") no-repeat center center/cover; /* Background image with overlay */
+  padding: 60px 20px; /* Spacing for the section */
+  text-align: center; /* Center text */
+  color: white; /* Text color */
+}
+
+.hero-title {
+  font-size: 3.5rem; /* Larger title */
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.8); /* Stronger shadow for depth */
+  animation: fadeInUp 1s ease forwards; /* Fade in animation */
+}
+
+.hero-description {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Stronger shadow for depth */
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.2s; /* Slight delay for description */
+}
+
+.hero-button {
+  background: linear-gradient(
+    45deg,
+    #e73c7e,
+    #23d5ab
+  ); /* Gradient background color */
+  color: white; /* Text color */
+  padding: 15px 30px; /* Larger padding for button */
+  border: none;
+  border-radius: 50px; /* Rounded button */
+  font-size: 1.2rem;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.4s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3); /* Shadow for the button */
+  display: inline-block; /* Ensure proper spacing */
+}
+
+.hero-button:hover {
+  background: linear-gradient(
+    45deg,
+    #23d5ab,
+    #e73c7e
+  ); /* Invert gradient on hover */
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Optional: Add a dark overlay to enhance text readability */
+.hero:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay */
+  z-index: 1; /* Below content */
+}
+
+/* Movies Section Styles */
+.movies-section {
+  margin-bottom: 2rem; /* Space below the movies section */
+}
+
+.section-title {
+  font-size: 2rem; /* Section title size */
+  text-align: center; /* Centered title */
+  margin-bottom: 1.5rem; /* Space below title */
+  color: #e73c7e; /* Title color */
+}
+
+.movies-list {
+  display: flex; /* Flexbox for horizontal layout */
+  justify-content: center; /* Center the movie items */
+  flex-wrap: wrap; /* Wrap items to next line */
+}
+
+.movie-item {
+  background-color: #34495e; /* Background for movie item */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Clip overflow */
+  margin: 1rem; /* Margin between movie items */
+  text-align: center; /* Center text */
+  width: 300px; /* Fixed width for movie items */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+  transition: transform 0.3s; /* Smooth scaling effect */
+}
+
+.movie-item:hover {
+  transform: scale(1.05); /* Scale up on hover */
+}
+
+.movie-poster {
+  width: 100%; /* Full width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.movie-title {
+  font-size: 1.5rem; /* Title font size */
+  margin: 0.5rem 0; /* Margin for title */
+  color: #e73c7e; /* Title color */
+}
+
+.movie-description {
+  padding: 0 1rem 1rem; /* Padding for description */
+}
+
+/* Footer Styles */
+.footer {
+  text-align: center;
+  padding: 1rem 0;
+  background-color: #2c3e50; /* Dark footer background */
+}
+
+.footer-text {
+  color: #ffffff; /* White text color */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .nav-list {
+    flex-direction: column; /* Stack navigation items */
+    align-items: center; /* Center align */
+  }
+
+  .nav-item {
+    margin: 10px 0; /* Vertical margin for items */
+  }
+
+  .movies-list {
+    flex-direction: column; /* Stack movie items */
+    align-items: center; /* Center align */
+  }
+}
+
+/* Animation Effect for Movie Items */
+.movie-item {
+  opacity: 0; /* Start as invisible */
+  transform: translateY(30px) scale(0.8) rotateY(15deg); /* Start slightly down, smaller, and rotated */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.movie-item.animate {
+  opacity: 1; /* Fade in */
+  transform: translateY(0) scale(1) rotateY(0); /* Move to original position, scale up, and reset rotation */
+}
+
+/* Optional: Add a hover effect for movie items */
+.movie-item:hover {
+  transform: scale(1.05) rotateY(5deg); /* Slightly scale and rotate on hover */
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Show Time section  */
+.showtimes-section {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+.section-title {
+  font-size: 24px;
+  color: #fff; /* Updated for better contrast */
+  margin-bottom: 10px;
+  text-align: center; /* Center align the title */
+}
+
+.showtime-description {
+  font-size: 16px;
+  color: #eee; /* Lighter text for description */
+  margin-bottom: 15px;
+  text-align: center; /* Center align the description */
+}
+
+.showtime-list {
+  display: flex; /* Display items in a flexbox */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  gap: 20px; /* Space between cards */
+  justify-content: center; /* Center the cards */
+  list-style-type: none;
+  padding: 0;
+}
+
+.showtime-item {
+  background-color: #e73c7e;
+  color: #fff;
+  padding: 20px;
+  margin: 10px;
+  width: 200px; /* Fixed width for each card */
+  border-radius: 10px; /* Rounded corners for card effect */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Card shadow */
+  text-align: center; /* Center text in card */
+  transition: transform 0.3s, background-color 0.3s; /* Animation for hover */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* Position to place icon */
+}
+
+.showtime-item:hover {
+  background-color: #23d5ab;
+  transform: translateY(-10px); /* Slight lift on hover */
+}
+
+.showtime-item strong {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.showtime-item i {
+  font-size: 40px; /* Icon size */
+  color: #fff;
+  margin-bottom: 10px;
+  display: block;
+}
+
+/* Booking section  */
+
+.booking-section {
+  background: linear-gradient(135deg, #23a6d5, #23d5ab); /* Initial gradient */
+  background-size: 200% 200%; /* Scale background to allow for animation */
+  animation: gradientAnimation 5s ease infinite; /* Apply animation */
+  padding: 40px 20px; /* More padding for larger section */
+  border-radius: 10px; /* Rounded corners */
+  text-align: center; /* Center align content */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+  margin: 30px 0; /* Space above and below section */
+  color: #fff; /* White text for contrast */
+}
+
+/* Gradient animation */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.section-title {
+  font-size: 32px; /* Bigger font for title */
+  margin-bottom: 10px; /* Space below title */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Text shadow for style */
+}
+
+.booking-description {
+  font-size: 18px; /* Larger description */
+  margin-bottom: 20px; /* Space below description */
+  color: #fff; /* White text for better contrast */
+  font-weight: 300; /* Lighter font weight */
+}
+
+/* Button styling */
+.booking-button {
+  font-size: 18px;
+  background-color: #e73c7e; /* Button background color */
+  color: #fff; /* Button text color */
+  padding: 12px 30px; /* Padding for button */
+  border: none; /* Remove default border */
+  border-radius: 50px; /* Fully rounded button */
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Button shadow */
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Button hover effect */
+.booking-button:hover {
+  background-color: #23d5ab; /* Change background color on hover */
+  transform: translateY(-5px); /* Slight upward movement */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Deepen shadow on hover */
+}
+
+.booking-button:active {
+  transform: translateY(0); /* Remove upward movement on click */
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.2); /* Reduce shadow on click */
+}
+
+/* FAQ section  */
+.faq-section {
+  background-color: #f7f7f7; /* Light background for contrast */
+  padding: 40px; /* Padding around the section */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  margin: 20px 0; /* Margin above and below the section */
+}
+
+.faq-title {
+  font-size: 2rem; /* Title font size */
+  color: #333; /* Dark text color */
+  text-align: center; /* Center title */
+  margin-bottom: 30px; /* Space below title */
+}
+
+.faq-container {
+  max-width: 800px; /* Limit width for readability */
+  margin: 0 auto; /* Center the container */
+}
+
+.faq-item {
+  background-color: #fff; /* White background for each item */
+  border-radius: 8px; /* Rounded corners */
+  margin-bottom: 20px; /* Space between items */
+  padding: 20px; /* Padding inside items */
+  transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.faq-item:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.faq-question {
+  font-size: 1.25rem; /* Font size for questions */
+  color: #e73c7e; /* Highlighted color for questions */
+  cursor: pointer; /* Pointer cursor for questions */
+  margin-bottom: 10px; /* Space below question */
+}
+
+.faq-answer {
+  font-size: 1rem; /* Font size for answers */
+  color: #666; /* Gray color for answers */
+}
+
+.faq-link {
+  color: #23d5ab; /* Link color */
+  text-decoration: none; /* No underline */
+  transition: color 0.3s; /* Smooth transition */
+}
+
+.faq-link:hover {
+  color: #e73c7e; /* Change color on hover */
+}
+
+/* Contact form section  */
+
+.contact-section {
+  background: linear-gradient(
+    135deg,
+    #23a6d5,
+    #e73c7e
+  ); /* Gradient background */
+  padding: 60px 30px; /* Increased padding for spacious look */
+  border-radius: 20px; /* Larger rounded corners */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* More prominent shadow */
+  margin: 40px 0; /* Larger margin above and below */
+  text-align: center; /* Center the content */
+  color: #fff; /* White text for contrast */
+}
+
+.section-title {
+  font-size: 36px; /* Larger title */
+  color: #fff; /* White title */
+  margin-bottom: 25px; /* More space below title */
+  letter-spacing: 2px; /* Space between letters for modern look */
+}
+
+.contact-description {
+  font-size: 20px; /* Larger description */
+  color: #f1f1f1; /* Light gray for description */
+  margin-bottom: 40px; /* More space below description */
+}
+
+.contact-form {
+  max-width: 600px; /* Limit form width */
+  margin: 0 auto; /* Center the form */
+  display: grid;
+  grid-gap: 25px; /* More spacing between fields */
+}
+
+.form-group {
+  position: relative;
+}
+
+.form-group label {
+  font-size: 16px; /* Label size */
+  color: #fff; /* White label text */
+  margin-bottom: 10px; /* Space between label and input */
+  font-weight: bold; /* Bold label text */
+  position: absolute;
+  left: 15px;
+  top: 12px;
+  transition: 0.3s; /* Smooth transition for floating effect */
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%; /* Full width but within limited container */
+  padding: 15px 20px 15px 50px; /* Padding with space for icons */
+  font-size: 16px; /* Input text size */
+  border: none; /* No border */
+  border-radius: 30px; /* Fully rounded inputs */
+  background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent background */
+  color: #fff; /* White text */
+  transition: 0.3s; /* Smooth transition */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  background-color: rgba(255, 255, 255, 0.4); /* Lighter background on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3); /* More intense shadow on focus */
+}
+
+.form-group input:focus + label,
+.form-group textarea:focus + label {
+  top: -10px; /* Move label up on focus */
+  left: 40px; /* Indent the label */
+  font-size: 14px; /* Smaller label text */
+  color: #23d5ab; /* Label color on focus */
+}
+
+.form-group i {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #fff; /* Icon color */
+  font-size: 20px; /* Icon size */
+}
+
+.contact-submit {
+  font-size: 18px; /* Font size */
+  background: linear-gradient(
+    135deg,
+    #23d5ab,
+    #23a6d5
+  ); /* Gradient button background */
+  color: #fff; /* White text */
+  padding: 12px 40px; /* Padding for button */
+  border: none; /* Remove default border */
+  border-radius: 50px; /* Fully rounded button */
+  cursor: pointer;
+  transition: all 0.4s ease; /* Smooth transition */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+.contact-submit:hover {
+  background: linear-gradient(
+    135deg,
+    #e73c7e,
+    #23a6d5
+  ); /* Change background on hover */
+  transform: translateY(-5px); /* Floating effect */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Shadow effect on hover */
+}
+
+/* Add some responsive adjustments */
+@media (max-width: 768px) {
+  .contact-form {
+    grid-gap: 15px; /* Less space between fields on small screens */
+  }
+}

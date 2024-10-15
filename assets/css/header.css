@@ -1,0 +1,156 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Header styling */
+.header {
+    background-color: #111;
+    color: #fff;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    font-size: 1.8rem;
+    margin-right: 10px;
+    color: #e50914;
+}
+
+.logo-text {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 20px;
+}
+
+.nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #e50914;
+}
+
+.theme-toggle {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle:hover {
+    color: #e50914;
+}
+
+/* Responsive nav toggle */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.nav-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 4px 0;
+}
+
+.nav-list.active {
+    display: block;
+}
+
+/* Welcome message styling */
+.welcome-message {
+    font-size: 1rem;
+    margin-right: 15px;
+    color: #fff;
+}
+
+/* Logout icon */
+.logout-icon {
+    color: #fff;
+    font-size: 1.2rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.logout-icon:hover {
+    color: #e50914;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #111;
+        padding: 10px 0;
+    }
+
+    .nav-item {
+        margin: 10px 0;
+    }
+
+    .nav-toggle {
+        display: flex;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+}
+
+/* Tablet Styles */
+@media (max-width: 1024px) {
+    .welcome-message {
+        font-size: 0.9rem;
+    }
+
+    .nav-link {
+        font-size: 0.9rem;
+    }
+}
